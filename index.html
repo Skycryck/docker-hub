@@ -20,17 +20,17 @@
 		  "apps" : [ //These are just examples you can remove them.
 		    {
 		      "name" : "Unraid",
-		      "icon" : "unraid.png",
+		      "icon" : "https://raw.githubusercontent.com/Skycryck/docker-hub/master/img/unraid.png",
 		      "url" : "http://name"
 		    },
 		    { 
 		      "name" : "Plex",
-		      "icon" : "plex.png",
+		      "icon" : "https://raw.githubusercontent.com/Skycryck/docker-hub/master/img/plex.png",
 		      "url" : "http://name:32400/web/index.html"
 		    },
 		    {
 		      "name" : "qBittorent",
-		      "icon" : "qbittorent.png",
+		      "icon" : "https://raw.githubusercontent.com/Skycryck/docker-hub/master/img/qbittorent.png",
 		      "url" : "http://your-ip:8080"
 		    }
 		  ]
@@ -50,7 +50,7 @@
 			linkLogo.href = app.url;
 			linkText.href = app.url;
 
-			linkLogo.style.backgroundImage = "url('./img/" + app.icon + "')";
+			linkLogo.style.backgroundImage = "url(" + app.icon + ")";
 			linkText.innerHTML = app.name;
 
 			li.appendChild(linkLogo);

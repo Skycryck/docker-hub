@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@700&family=Space+Grotesk:wght@700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	transition: 0.5s;
+}
 
 body {
 	width: 100%;
@@ -17,7 +23,7 @@ body {
 h1 {
 	color: white;
 	font-weight: bold;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 }
 
 hr {
@@ -26,6 +32,9 @@ hr {
 
 	border: none;
 	background-color: white;
+
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .hub {
@@ -36,8 +45,6 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    transition: 0.5s;
 }
 
 .apps {
@@ -56,22 +63,20 @@ hr {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	transition: 0.5s;
+	background-color: #0f0f0f;
+	border-radius: 20px;
 }
 
 .apps li:hover {
-	background-color: #0f0f0f;
+	transform: translateY(-5px);
 }
 
 .apps li .text {
 	color: white;
 	text-decoration: none;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 
 	margin-top: 10px;
-
-	transition: 0.5s;
 }
 
 .apps li .text:hover {
@@ -85,11 +90,4 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-    transition: 0.5s;
-}
-
-.apps li .logo:hover {
-	/* filter: invert(1); */
-	transform: rotate(360deg);
 }
